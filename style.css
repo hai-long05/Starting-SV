@@ -1,0 +1,50 @@
+:root {
+    --bar-thickness: 10px;
+    --bar-spacing: 20px;
+    --bar-color: red;
+    --bar-rounded: 10px;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #100f0f;
+}
+
+.grid {
+    position: absolute;
+    left: 30%;
+    bottom: -200px;
+    /* padding-left: 100%; */
+    margin: 0;
+    transform: translate(-50%, -50%);
+}
+
+.array-bar {
+    margin-left: 1px;
+    width: 5px;
+    border-radius: 10px;
+    background-color: #daece0;
+    display: inline-block;
+}
+
+.nav {
+    padding-left: 4%;
+    padding-top: 30px
+}
+
+button {
+    width: 40px;
+    height: 40px;
+    background-color: #daece0;
+    border-radius: 8px;
+}
+
+.length {
+    padding-left: 9px;
+}
+
+.fa-icon {
+    background-color: #daece0;
+}
