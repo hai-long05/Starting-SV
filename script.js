@@ -2,28 +2,27 @@ const main = document.getElementById('grid');
 const shuffle = document.getElementById('shuffle');
 const range = document.getElementById('slide');
 
-max = 500
-min = 20
+let min = 20
+let max = 500
 
-let arrayLength = 160;
+var arrayLength = 160;
 const val = range.value;
 
 console.log(val)
-shuffle.onclick = renderBars(arrayLength);
+shuffle.onclick = renderBars;
 range.oninput = setVal;
 
 renderBars(arrayLength);
 
 function setVal() {
     let value = range.value;
-    console.log(value);
     arrayLength = value;
-    renderBars(arrayLength)
+    renderBars(arrayLength);
 }
 
-function renderBars(arrayLength) {
+function renderBars() {
     main.innerHTML = '';
-    let unsortedArray = []
+    var unsortedArray = []
     for (let i = 0; i < arrayLength; i++) {
         unsortedArray.push(Math.floor(Math.random() * (max - min) + min));
     }

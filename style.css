@@ -14,11 +14,11 @@
 
 .grid {
     position: absolute;
-    left: 30%;
-    bottom: -200px;
+    left: 4%;
+    bottom: 10px;
     /* padding-left: 100%; */
     margin: 0;
-    transform: translate(-50%, -50%);
+    /* transform: translate(-50%, -50%); */
 }
 
 .array-bar {
